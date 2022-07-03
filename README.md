@@ -1,6 +1,6 @@
-# autopublish-template
+# angular-elements
 
-[![npm version](https://img.shields.io/npm/v/@esm-bundle/autopublish-template.svg?style=flat)](https://www.npmjs.com/package/@esm-bundle/autopublish-template) [![build status](https://travis-ci.com/esm-bundle/autopublish-template.svg?branch=master)](https://travis-ci.com/esm-bundle/autopublish-template) [![](https://data.jsdelivr.com/v1/package/npm/@esm-bundle/autopublish-template/badge)](https://www.jsdelivr.com/package/npm/@esm-bundle/autopublish-template)
+[![npm version](https://img.shields.io/npm/v/@esm-bundle/angular__cdk.svg?style=flat)](https://www.npmjs.com/package/@esm-bundle/angular__cdk) [![build status](https://travis-ci.com/esm-bundle/angular__cdk.svg?branch=master)](https://travis-ci.com/esm-bundle/angular__cdk) [![](https://data.jsdelivr.com/v1/package/npm/@esm-bundle/angular__cdk/badge)](https://www.jsdelivr.com/package/npm/@esm-bundle/angular__cdk)
 
 ["What is this" blog post](https://medium.com/@joeldenning/an-esm-bundle-for-any-npm-package-5f850db0e04d)
 
@@ -8,28 +8,46 @@
 
 A repo that tests automatic detection of upstream publishes and the publishing of `@esm-bundle` versions of them.
 
-Upstream repo at https://github.com/joeldenning/autopublish-template.
+## Latest Version
 
-## JS Delivr
+### @angular/cdk/a11y
 
-https://cdn.jsdelivr.net/npm/@esm-bundle/autopublish-template/esm/index.js
+#### ES2015
 
-https://cdn.jsdelivr.net/npm/@esm-bundle/autopublish-template/system/index.js
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.js
 
-## Unpkg
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.min.js
 
-https://unpkg.com/@esm-bundle/autopublish-template/esm/index.js
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.js
 
-https://unpkg.com/@esm-bundle/autopublish-template/system/index.js
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.min.js
+
+#### ES2020
+
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.js
+
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.min.js
+
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.js
+
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.min.js
+
+## Other packages
+
+Other packages are named in the following format `angular-${cdk-package-filename}`, for instance, `@angular/cdk/accordion` is `angular-accordion.js`, `@angular/cdk/portal` is `angular-portal.js`, etc.
+
+## Need a build that doesn't exist yet?
+
+If you need an es5 build, non-ivy build, or a build for a different version of Angular, please open a Github issue.
 
 ## Npm
 
 ```sh
-npm install --save autopublish-template@npm:@esm-bundle/autopublish-template
+npm install --save angular__cdk@npm:@esm-bundle/angular__cdk
 ```
 
 ## Yarn
 
 ```sh
-yarn add autopublish-template@npm:@esm-bundle/autopublish-template
+yarn add angular__cdk@npm:@esm-bundle/angular__cdk
 ```
