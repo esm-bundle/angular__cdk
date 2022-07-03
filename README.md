@@ -1,4 +1,4 @@
-# angular-elements
+# angular-cdk
 
 [![npm version](https://img.shields.io/npm/v/@esm-bundle/angular__cdk.svg?style=flat)](https://www.npmjs.com/package/@esm-bundle/angular__cdk) [![build status](https://travis-ci.com/esm-bundle/angular__cdk.svg?branch=master)](https://travis-ci.com/esm-bundle/angular__cdk) [![](https://data.jsdelivr.com/v1/package/npm/@esm-bundle/angular__cdk/badge)](https://www.jsdelivr.com/package/npm/@esm-bundle/angular__cdk)
 
