@@ -1,17 +1,121 @@
 {
-  "name": "@esm-bundle/autopublish-template",
+  "name": "@esm-bundle/angular__cdk",
   "version": "20.0.20",
   "description": "Repo to test esm-bundle's automatic publishing",
-  "main": "index.js",
-  "module": "esm/index.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "es2015": "./es2015/ivy/angular-cdk.js",
+      "es2020": "./es2020/ivy/angular-cdk.js",
+      "default": "./es2020/ivy/angular-cdk.js"
+    },
+    "./a11y": {
+      "es2015": "./es2015/ivy/angular-a11y.js",
+      "es2020": "./es2020/ivy/angular-a11y.js",
+      "default": "./es2020/ivy/angular-a11y.js"
+    },
+    "./accordion": {
+      "es2015": "./es2015/ivy/angular-accordion.js",
+      "es2020": "./es2020/ivy/angular-accordion.js",
+      "default": "./es2020/ivy/angular-accordion.js"
+    },
+    "./bidi": {
+      "es2015": "./es2015/ivy/angular-bidi.js",
+      "es2020": "./es2020/ivy/angular-bidi.js",
+      "default": "./es2020/ivy/angular-bidi.js"
+    },
+    "./clipboard": {
+      "es2015": "./es2015/ivy/angular-clipboard.js",
+      "es2020": "./es2020/ivy/angular-clipboard.js",
+      "default": "./es2020/ivy/angular-clipboard.js"
+    },
+    "./coercion": {
+      "es2015": "./es2015/ivy/angular-coercion.js",
+      "es2020": "./es2020/ivy/angular-coercion.js",
+      "default": "./es2020/ivy/angular-coercion.js"
+    },
+    "./collections": {
+      "es2015": "./es2015/ivy/angular-collections.js",
+      "es2020": "./es2020/ivy/angular-collections.js",
+      "default": "./es2020/ivy/angular-collections.js"
+    },
+    "./dialog": {
+      "es2015": "./es2015/ivy/angular-dialog.js",
+      "es2020": "./es2020/ivy/angular-dialog.js",
+      "default": "./es2020/ivy/angular-dialog.js"
+    },
+    "./drag-drop": {
+      "es2015": "./es2015/ivy/angular-drag-drop.js",
+      "es2020": "./es2020/ivy/angular-drag-drop.js",
+      "default": "./es2020/ivy/angular-drag-drop.js"
+    },
+    "./keycodes": {
+      "es2015": "./es2015/ivy/angular-keycodes.js",
+      "es2020": "./es2020/ivy/angular-keycodes.js",
+      "default": "./es2020/ivy/angular-keycodes.js"
+    },
+    "./layout": {
+      "es2015": "./es2015/ivy/angular-layout.js",
+      "es2020": "./es2020/ivy/angular-layout.js",
+      "default": "./es2020/ivy/angular-layout.js"
+    },
+    "./menu": {
+      "es2015": "./es2015/ivy/angular-menu.js",
+      "es2020": "./es2020/ivy/angular-menu.js",
+      "default": "./es2020/ivy/angular-menu.js"
+    },
+    "./observers": {
+      "es2015": "./es2015/ivy/angular-observers.js",
+      "es2020": "./es2020/ivy/angular-observers.js",
+      "default": "./es2020/ivy/angular-observers.js"
+    },
+    "./overlay": {
+      "es2015": "./es2015/ivy/angular-overlay.js",
+      "es2020": "./es2020/ivy/angular-overlay.js",
+      "default": "./es2020/ivy/angular-overlay.js"
+    },
+    "./platform": {
+      "es2015": "./es2015/ivy/angular-platform.js",
+      "es2020": "./es2020/ivy/angular-platform.js",
+      "default": "./es2020/ivy/angular-platform.js"
+    },
+    "./portal": {
+      "es2015": "./es2015/ivy/angular-portal.js",
+      "es2020": "./es2020/ivy/angular-portal.js",
+      "default": "./es2020/ivy/angular-portal.js"
+    },
+    "./scrolling": {
+      "es2015": "./es2015/ivy/angular-scrolling.js",
+      "es2020": "./es2020/ivy/angular-scrolling.js",
+      "default": "./es2020/ivy/angular-scrolling.js"
+    },
+    "./stepper": {
+      "es2015": "./es2015/ivy/angular-stepper.js",
+      "es2020": "./es2020/ivy/angular-stepper.js",
+      "default": "./es2020/ivy/angular-stepper.js"
+    },
+    "./table": {
+      "es2015": "./es2015/ivy/angular-table.js",
+      "es2020": "./es2020/ivy/angular-table.js",
+      "default": "./es2020/ivy/angular-table.js"
+    },
+    "./text-field": {
+      "es2015": "./es2015/ivy/angular-text-field.js",
+      "es2020": "./es2020/ivy/angular-text-field.js",
+      "default": "./es2020/ivy/angular-text-field.js"
+    },
+    "./tree": {
+      "es2015": "./es2015/ivy/angular-tree.js",
+      "es2020": "./es2020/ivy/angular-tree.js",
+      "default": "./es2020/ivy/angular-tree.js"
+    }
+  },
   "scripts": {
     "test": "pnpm run build && concurrently -n w: 'pnpm:test:*'",
     "test:browser": "karma start karma.conf.cjs --single-run",
     "debug:test:browser": "karma start karma.conf.cjs",
-    "test:unit": "mocha -r chai/register-expect 'node-test/**/*.*'",
     "test:formatting": "prettier --check .",
-    "build": "rollup -c",
+    "build": "rimraf system es2015 es2020 && rollup -c",
     "format": "prettier --write .",
     "release": "release-it",
     "prepublishOnly": "pnpm run build && pinst --disable",
@@ -19,39 +123,44 @@
     "postpublish": "pinst --enable"
   },
   "files": [
-    "esm",
+    "es2015",
+    "es2020",
     "system"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/esm-bundle/autopublish-template.git"
+    "url": "git+https://github.com/esm-bundle/angular__cdk.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/esm-bundle/autopublish-template/issues"
+    "url": "https://github.com/esm-bundle/angular__cdk/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/esm-bundle/autopublish-template#readme",
+  "homepage": "https://github.com/esm-bundle/angular__cdk#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "22.0.1",
-    "@rollup/plugin-node-resolve": "13.3.0",
-    "autopublish-template": "20.0.20",
-    "chai": "4.3.4",
+    "@angular/cdk": "14.0.4",
+    "@angular/common": "14.0.4",
+    "@angular/compiler": "14.0.4",
+    "@angular/compiler-cli": "14.0.4",
+    "@angular/core": "14.0.4",
+    "@rollup/plugin-babel": "5.3.1",
     "concurrently": "7.2.2",
     "husky": "8.0.1",
     "karma": "6.4.0",
     "karma-firefox-launcher": "2.1.2",
     "karma-jasmine": "5.1.0",
-    "mocha": "10.0.0",
     "pinst": "3.0.0",
     "prettier": "2.7.1",
     "pretty-quick": "3.1.3",
     "release-it": "15.1.1",
     "release-it-plugin-esm-bundle": "3.0.0",
+    "rimraf": "3.0.2",
     "rollup": "2.75.7",
-    "rollup-plugin-terser": "7.0.2"
+    "rollup-plugin-terser": "7.0.2",
+    "rxjs": "7.5.5",
+    "typescript": "4.7.4"
   }
 }
