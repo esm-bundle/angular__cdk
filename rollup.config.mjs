@@ -123,6 +123,7 @@ function createConfig({ ecma, prod, format, angularPackage, filename }) {
       "rxjs/operators",
       "@angular/core",
       "@angular/common",
+      "@angular/forms",
       /@angular\/cdk\/.*/,
     ],
   };

@@ -8,6 +8,7 @@ document.head.appendChild(
           "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs/system/es2015/rxjs-operators.min.js",
           "@angular/core": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__core/system/es2015/ivy/angular-core.min.js",
           "@angular/common": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__common/system/es2015/ivy/angular-common.min.js",
+          "@angular/forms": "https://cdn.jsdelivr.net/npm/@esm-bundle/angular__forms/system/es2015/ivy/angular-forms.min.js",
           "@angular/cdk/a11y": "/base/system/es2015/ivy/angular-a11y.min.js",
           "@angular/cdk/accordion": "/base/system/es2015/ivy/angular-accordion.min.js",
           "@angular/cdk/bidi": "/base/system/es2015/ivy/angular-bidi.min.js",

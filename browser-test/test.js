@@ -51,6 +51,11 @@ describe("@esm-bundle/angular__cdk", () => {
       expectedImport: "BreakpointObserver",
     },
     {
+      packageName: "@angular/cdk/listbox",
+      filename: "angular-listbox",
+      expectedImport: "CdkListboxModule",
+    },
+    {
       packageName: "@angular/cdk/menu",
       filename: "angular-menu",
       expectedImport: "CdkMenu",
