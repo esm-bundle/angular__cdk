@@ -1,6 +1,6 @@
 {
   "name": "@esm-bundle/angular__cdk",
-  "version": "15.1.1",
+  "version": "15.1.2",
   "description": "ESM and SystemJS bundles for @angular/cdk",
   "type": "module",
   "exports": {
