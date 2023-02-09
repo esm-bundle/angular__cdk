@@ -147,7 +147,7 @@
   },
   "homepage": "https://github.com/esm-bundle/angular__cdk#readme",
   "devDependencies": {
-    "@angular/cdk": "15.1.3",
+    "@angular/cdk": "15.1.4",
     "@angular/common": "15.1.3",
     "@angular/compiler": "15.1.3",
     "@angular/compiler-cli": "15.1.3",
