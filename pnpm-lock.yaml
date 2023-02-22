@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@angular/cdk': 15.1.6
+  '@angular/cdk': 15.2.0
   '@angular/common': 15.2.0
   '@angular/compiler': 15.2.0
   '@angular/compiler-cli': 15.2.0
@@ -25,7 +25,7 @@ specifiers:
   typescript: 4.9.5
 
 devDependencies:
-  '@angular/cdk': 15.1.6_u7amrreaxewzbfcpfpus6q3iuy
+  '@angular/cdk': 15.2.0_u7amrreaxewzbfcpfpus6q3iuy
   '@angular/common': 15.2.0_6rl5h76dm6n755x2qkojsrrx44
   '@angular/compiler': 15.2.0_@angular+core@15.2.0
   '@angular/compiler-cli': 15.2.0_m4al3dxpm6stx7f4nyyv5fszcu
@@ -58,8 +58,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.14
     dev: true
 
-  /@angular/cdk/15.1.6_u7amrreaxewzbfcpfpus6q3iuy:
-    resolution: {integrity: sha512-uaNTNNdy+zhobJ0FQmWg9Wa9paj0wny7X+RJB/cB+wP8Vk6thgXH3IlK2KNA2FY/O6QVU/Fjixt+OSSfaVBHtw==}
+  /@angular/cdk/15.2.0_u7amrreaxewzbfcpfpus6q3iuy:
+    resolution: {integrity: sha512-+D0gLmDZVCBMSZ6juImP0eXpL40hw4Ipm8KRQmF3UOU9T5xXMxzYjUI8N3J+ZUZsNzQwy+eW0HImkZ5St6YxvA==}
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
