@@ -21,16 +21,16 @@ specifiers:
   rimraf: 5.0.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2
-  rxjs: 7.8.0
+  rxjs: 7.8.1
   typescript: 5.0.4
 
 devDependencies:
-  '@angular/cdk': 15.2.8_66bdatrxu7nh3o7hcmcysv7zce
-  '@angular/common': 15.2.8_j2gtxhdncu6bk6kjm26qrphu5y
+  '@angular/cdk': 15.2.8_7qnwdfovv36ybx7w7xuqtqmpwu
+  '@angular/common': 15.2.8_ov3cjylmnpb4vjwqj5ay3iec2e
   '@angular/compiler': 15.2.8_@angular+core@15.2.8
   '@angular/compiler-cli': 15.2.8_q6j45b33ddmbq32smxq6ahkus4
-  '@angular/core': 15.2.8_rxjs@7.8.0
-  '@angular/forms': 15.2.8_66bdatrxu7nh3o7hcmcysv7zce
+  '@angular/core': 15.2.8_rxjs@7.8.1
+  '@angular/forms': 15.2.8_7qnwdfovv36ybx7w7xuqtqmpwu
   '@rollup/plugin-babel': 6.0.3_rollup@2.79.1
   concurrently: 8.0.1
   husky: 8.0.3
@@ -45,7 +45,7 @@ devDependencies:
   rimraf: 5.0.0
   rollup: 2.79.1
   rollup-plugin-terser: 7.0.2_rollup@2.79.1
-  rxjs: 7.8.0
+  rxjs: 7.8.1
   typescript: 5.0.4
 
 packages:
@@ -58,30 +58,30 @@ packages:
       '@jridgewell/trace-mapping': 0.3.14
     dev: true
 
-  /@angular/cdk/15.2.8_66bdatrxu7nh3o7hcmcysv7zce:
+  /@angular/cdk/15.2.8_7qnwdfovv36ybx7w7xuqtqmpwu:
     resolution: {integrity: sha512-jiCoxfBFMH29IZIiPmVUzIWetfUNpMIvC20xYVF8RMM819vPogoObzwK4DN/sXcp/6oVbBzZFaYdijhhIt9soQ==}
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 15.2.8_j2gtxhdncu6bk6kjm26qrphu5y
-      '@angular/core': 15.2.8_rxjs@7.8.0
-      rxjs: 7.8.0
+      '@angular/common': 15.2.8_ov3cjylmnpb4vjwqj5ay3iec2e
+      '@angular/core': 15.2.8_rxjs@7.8.1
+      rxjs: 7.8.1
       tslib: 2.4.0
     optionalDependencies:
       parse5: 7.1.2
     dev: true
 
-  /@angular/common/15.2.8_j2gtxhdncu6bk6kjm26qrphu5y:
+  /@angular/common/15.2.8_ov3cjylmnpb4vjwqj5ay3iec2e:
     resolution: {integrity: sha512-yLDQihiRcVl38HrWMPbqgzOaSUw85AQH5BsGdjbS6BpoBQj3EXOpccCMFsuxOKxPG4toatgawNqrEnK0Jpv9Mw==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
       '@angular/core': 15.2.8
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 15.2.8_rxjs@7.8.0
-      rxjs: 7.8.0
+      '@angular/core': 15.2.8_rxjs@7.8.1
+      rxjs: 7.8.1
       tslib: 2.4.0
     dev: true
 
@@ -118,22 +118,22 @@ packages:
       '@angular/core':
         optional: true
     dependencies:
-      '@angular/core': 15.2.8_rxjs@7.8.0
+      '@angular/core': 15.2.8_rxjs@7.8.1
       tslib: 2.4.0
     dev: true
 
-  /@angular/core/15.2.8_rxjs@7.8.0:
+  /@angular/core/15.2.8_rxjs@7.8.1:
     resolution: {integrity: sha512-NDs+g4uM4EhyCvluf8a0YBCFXsDAEfCMHOD5cS00Bl+liTQ7JwtmepkWXMyjLB92irC9JaR79kdy4BoIKOh8WA==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
       rxjs: ^6.5.3 || ^7.4.0
       zone.js: ~0.11.4 || ~0.12.0 || ~0.13.0
     dependencies:
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       tslib: 2.4.0
     dev: true
 
-  /@angular/forms/15.2.8_66bdatrxu7nh3o7hcmcysv7zce:
+  /@angular/forms/15.2.8_7qnwdfovv36ybx7w7xuqtqmpwu:
     resolution: {integrity: sha512-VyevVj20DdQWjAQUyiFTe+DAzqG9GqfAOWn376Y/lhPcwxAojXePTGNgtQud566/urDrNrP5haaLD6O36/3n+w==}
     engines: {node: ^14.20.0 || ^16.13.0 || >=18.10.0}
     peerDependencies:
@@ -142,9 +142,9 @@ packages:
       '@angular/platform-browser': 15.2.8
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 15.2.8_j2gtxhdncu6bk6kjm26qrphu5y
-      '@angular/core': 15.2.8_rxjs@7.8.0
-      rxjs: 7.8.0
+      '@angular/common': 15.2.8_ov3cjylmnpb4vjwqj5ay3iec2e
+      '@angular/core': 15.2.8_rxjs@7.8.1
+      rxjs: 7.8.1
       tslib: 2.4.0
     dev: true
 
@@ -1086,7 +1086,7 @@ packages:
       chalk: 4.1.2
       date-fns: 2.29.3
       lodash: 4.17.21
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       shell-quote: 1.8.1
       spawn-command: 0.0.2-1
       supports-color: 8.1.1
@@ -2081,7 +2081,7 @@ packages:
       mute-stream: 1.0.0
       ora: 6.3.0
       run-async: 2.4.1
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       string-width: 5.1.2
       strip-ansi: 7.0.1
       through: 2.3.8
@@ -3387,8 +3387,8 @@ packages:
       queue-microtask: 1.2.2
     dev: true
 
-  /rxjs/7.8.0:
-    resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
+  /rxjs/7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
       tslib: 2.4.0
     dev: true
