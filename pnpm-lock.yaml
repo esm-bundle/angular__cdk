@@ -9,7 +9,7 @@ specifiers:
   '@angular/forms': 15.2.10
   '@rollup/plugin-babel': 6.0.4
   concurrently: 8.2.2
-  husky: 9.0.5
+  husky: 9.0.6
   karma: 6.4.2
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 5.1.0
@@ -33,7 +33,7 @@ devDependencies:
   '@angular/forms': 15.2.10_c5fz2qkumkvwpqyn4qhhzynrua
   '@rollup/plugin-babel': 6.0.4_rollup@2.79.1
   concurrently: 8.2.2
-  husky: 9.0.5
+  husky: 9.0.6
   karma: 6.4.2
   karma-firefox-launcher: 2.1.2
   karma-jasmine: 5.1.0_karma@6.4.2
@@ -2016,8 +2016,8 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
-  /husky/9.0.5:
-    resolution: {integrity: sha512-/EX48XLor4FczjgdJjwK4qMETrJxJqF4rkgo+NUeK8b2F4TV6s5QxAuG2JZfxm4b9WnrgBGS7bA/JK+H5CKg+A==}
+  /husky/9.0.6:
+    resolution: {integrity: sha512-EEuw/rfTiMjOfuL7pGO/i9otg1u36TXxqjIA6D9qxVjd/UXoDOsLor/BSFf5hTK50shwzCU3aVVwdXDp/lp7RA==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
