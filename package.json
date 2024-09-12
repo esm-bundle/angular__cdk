@@ -154,7 +154,7 @@
     "@angular/core": "15.2.10",
     "@angular/forms": "15.2.10",
     "@rollup/plugin-babel": "6.0.4",
-    "concurrently": "9.0.0",
+    "concurrently": "9.0.1",
     "husky": "9.1.6",
     "karma": "6.4.4",
     "karma-firefox-launcher": "2.1.3",
