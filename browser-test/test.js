@@ -81,6 +81,11 @@ describe("@esm-bundle/angular__cdk", () => {
       expectedImport: "CdkPortal",
     },
     {
+      packageName: "@angular/cdk/private",
+      filename: "angular-private",
+      expectedImport: "_CdkPrivateStyleLoader",
+    },
+    {
       packageName: "@angular/cdk/scrolling",
       filename: "angular-scrolling",
       expectedImport: "CdkScrollable",
