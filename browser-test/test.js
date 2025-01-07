@@ -107,19 +107,19 @@ describe("@esm-bundle/angular__cdk", () => {
     },
   ];
 
+  const esVersions = ["es2022"];
+
   packages.forEach(({ packageName, filename, expectedImport }) => {
     describe(packageName, () => {
-      ["es2015", "es2020"].forEach((ecma) => {
+      esVersions.forEach((ecma) => {
         it(`can load the System.register ${ecma} bundle`, async () => {
-          const m = await System.import(
-            `/base/system/${ecma}/ivy/${filename}.js`
-          );
+          const m = await System.import(`/base/system/${ecma}/${filename}.js`);
           expect(m[expectedImport]).toBeDefined();
         });
 
         it(`can load the System.register ${ecma} prod bundle`, async () => {
           const m = await System.import(
-            `/base/system/${ecma}/ivy/${filename}.min.js`
+            `/base/system/${ecma}/${filename}.min.js`,
           );
           expect(m[expectedImport]).toBeDefined();
         });

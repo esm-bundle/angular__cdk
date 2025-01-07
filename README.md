@@ -12,25 +12,15 @@ A repo that tests automatic detection of upstream publishes and the publishing o
 
 ### @angular/cdk/a11y
 
-#### ES2015
+#### ES2022
 
-https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.js
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2022/angular-a11y.js
 
-https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.min.js
+https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2022/angular-a11y.min.js
 
-https://unpkg.com/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.js
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2022/angular-a11y.js
 
-https://unpkg.com/@esm-bundle/angular__cdk/system/es2015/ivy/angular-a11y.min.js
-
-#### ES2020
-
-https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.js
-
-https://cdn.jsdelivr.net/npm/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.min.js
-
-https://unpkg.com/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.js
-
-https://unpkg.com/@esm-bundle/angular__cdk/system/es2020/ivy/angular-a11y.min.js
+https://unpkg.com/@esm-bundle/angular__cdk/system/es2022/angular-a11y.min.js
 
 ## Other packages
 

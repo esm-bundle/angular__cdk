@@ -5,12 +5,12 @@ const packageJson = require("../package.json");
 
 // A list of entry points from `package.json`: `['angular-cdk.js', 'angular-accordion.js', ...]`.
 const declaredEntryPoints = Object.values(packageJson.exports)
-  .map(({ es2020 }) => es2020)
+  .map(({ es2022 }) => es2022)
   .map((file) => path.parse(file).base);
 
-// A list of built entry points in the `es2020/ivy` folder.
+// A list of built entry points in the `es2022` folder.
 const builtEntryPoints = fs
-  .readdirSync(path.join(process.cwd(), "es2020/ivy"))
+  .readdirSync(path.join(process.cwd(), "es2022"))
   .filter((file) => !file.includes(".min.js") && !file.includes(".map"));
 
 // This simple test basically ensures there's no difference between `@angular/cdk` entry points
@@ -18,12 +18,12 @@ const builtEntryPoints = fs
 // to `exports` when the CDK team adds new entry point on their side.
 
 const difference = builtEntryPoints.filter(
-  (entryPoint) => !declaredEntryPoints.includes(entryPoint)
+  (entryPoint) => !declaredEntryPoints.includes(entryPoint),
 );
 
 if (difference.length > 0) {
   console.error(
-    "There is a difference between `exports` and built entry points."
+    "There is a difference between `exports` and built entry points.",
   );
   process.exit(1);
 }
