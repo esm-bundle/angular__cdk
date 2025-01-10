@@ -1,5 +1,4 @@
 import fs from "fs";
-import url from "url";
 import path from "path";
 import { babel } from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
@@ -10,17 +9,21 @@ import {
   LogLevel,
 } from "@angular/compiler-cli";
 
-const __dirname = new url.URL(".", import.meta.url).pathname;
+const __dirname = import.meta.dirname;
 
-// This will be a list of packages that are located within the `fesm2020` folder,
+// This will be a list of packages that are located within the `fesm2022` folder,
 // for instance: ['a11y', 'accordion', 'clipboard', 'dialog', 'collections', ...].
 // We'll be able to constructor compilation targets by concatenating them with `@angular/cdk`.
 const cdkPackages = fs
-  .readdirSync(path.resolve(__dirname, "node_modules/@angular/cdk/fesm2020"))
+  .readdirSync(path.resolve(__dirname, "node_modules/@angular/cdk/fesm2022"), {
+    recursive: true,
+  })
   .filter((filename) => filename.endsWith(".mjs"))
   // We don't need `testing.mjs` since it'll be used locally in unit tests.
   .filter((filename) => filename.includes("testing") === false)
   .map((filename) => filename.replace(".mjs", ""))
+  // replace backslashes with forward slashes for consistency across platforms
+  .map((filename) => filename.replace(/\\/g, "/"))
   .map((filename) => {
     // `cdk` is a main entry-point.
     const cdkPackage =
@@ -31,9 +34,9 @@ const cdkPackages = fs
 const packageJson = JSON.parse(
   fs
     .readFileSync(
-      path.resolve(__dirname, "node_modules/@angular/cdk/package.json")
+      path.resolve(__dirname, "node_modules/@angular/cdk/package.json"),
     )
-    .toString()
+    .toString(),
 );
 
 /** File system used by the Angular linker plugin. */
@@ -52,17 +55,17 @@ const linkerPlugin = createEs2015LinkerPlugin({
 
 // Construct a list of compilation targets, the list will be the following:
 // [
-//  { ecma: '2015', filename: 'platform', angularPackage: '@angular/cdk/platform' },
-//  { ecma: '2020', filename: 'bidi', angularPackage: '@angular/cdk/bidi' },
+//  { ecma: '2022', filename: 'bidi', angularPackage: '@angular/cdk/bidi' },
+//  { ecma: '2022', filename: 'platform', angularPackage: '@angular/cdk/platform' },
 //  ...
 // ]
-const packages = ["2015", "2020"]
+const packages = ["2022"]
   .map((ecma) =>
     cdkPackages.map(({ filename, cdkPackage }) => ({
       ecma,
       filename,
       angularPackage: cdkPackage,
-    }))
+    })),
   )
   .flat();
 
@@ -88,18 +91,19 @@ export default packages
   .flat();
 
 function createConfig({ ecma, prod, format, angularPackage, filename }) {
-  const dir = (format === "es" ? "." : format) + `/es${ecma}/ivy`;
+  const dir = (format === "es" ? "." : format) + `/es${ecma}`;
+  const flatFilename = filename.replace(/\//g, "-");
 
   return {
     input: path.join(
       __dirname,
-      `node_modules/@angular/cdk/fesm${ecma}/${filename}.mjs`
+      `node_modules/@angular/cdk/fesm${ecma}/${filename}.mjs`,
     ),
     output: {
-      file: `${dir}/angular-${filename}.${prod ? "min." : ""}js`,
+      file: `${dir}/angular-${flatFilename}.${prod ? "min." : ""}js`,
       format,
       sourcemap: true,
-      banner: `/* esm-bundle - ${angularPackage}@${packageJson.version} - Ivy - ${format} format - es${ecma} - Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license */`,
+      banner: `/* esm-bundle - ${angularPackage}@${packageJson.version} - ${format} format - Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license */`,
     },
     plugins: [
       babel({ plugins: [linkerPlugin] }),
