@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@angular/cdk': 15.2.9
-  '@angular/common': 19.2.3
-  '@angular/compiler': 19.2.3
-  '@angular/compiler-cli': 19.2.3
-  '@angular/core': 19.2.3
-  '@angular/forms': 19.2.3
+  '@angular/common': 19.2.4
+  '@angular/compiler': 19.2.4
+  '@angular/compiler-cli': 19.2.4
+  '@angular/core': 19.2.4
+  '@angular/forms': 19.2.4
   '@rollup/plugin-babel': 6.0.4
   concurrently: 9.1.2
   husky: 9.1.7
@@ -25,12 +25,12 @@ specifiers:
   typescript: 5.8.2
 
 devDependencies:
-  '@angular/cdk': 15.2.9_hjkvwplvid2tvaumcupgfbyugi
-  '@angular/common': 19.2.3_ap4tup2klsac5yf2z62xzwyqyy
-  '@angular/compiler': 19.2.3
-  '@angular/compiler-cli': 19.2.3_hm6h4ioznorfbvqagzd65elpbe
-  '@angular/core': 19.2.3_rxjs@7.8.2
-  '@angular/forms': 19.2.3_hjkvwplvid2tvaumcupgfbyugi
+  '@angular/cdk': 15.2.9_laq3phjmfzwlj4dsqyw4s55cne
+  '@angular/common': 19.2.4_qebl5hlam5vmvw3ya5yjy5qwbq
+  '@angular/compiler': 19.2.4
+  '@angular/compiler-cli': 19.2.4_ltuix3bmbosmtdoehqdwvvjuw4
+  '@angular/core': 19.2.4_rxjs@7.8.2
+  '@angular/forms': 19.2.4_laq3phjmfzwlj4dsqyw4s55cne
   '@rollup/plugin-babel': 6.0.4_rollup@2.79.2
   concurrently: 9.1.2
   husky: 9.1.7
@@ -58,42 +58,42 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@angular/cdk/15.2.9_hjkvwplvid2tvaumcupgfbyugi:
+  /@angular/cdk/15.2.9_laq3phjmfzwlj4dsqyw4s55cne:
     resolution: {integrity: sha512-koaM07N1AIQ5oHU27l0/FoQSSoYAwlAYwVZ4Di3bYrJsTBNCN2Xsby7wI8gZxdepMnV4Fe9si382BDBov+oO4Q==}
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 19.2.3_ap4tup2klsac5yf2z62xzwyqyy
-      '@angular/core': 19.2.3_rxjs@7.8.2
+      '@angular/common': 19.2.4_qebl5hlam5vmvw3ya5yjy5qwbq
+      '@angular/core': 19.2.4_rxjs@7.8.2
       rxjs: 7.8.2
       tslib: 2.4.0
     optionalDependencies:
       parse5: 7.1.2
     dev: true
 
-  /@angular/common/19.2.3_ap4tup2klsac5yf2z62xzwyqyy:
-    resolution: {integrity: sha512-cYOMRXFb6Sjtg9BI3bE/Ave+xU234jQmHYj7hBxr3MiqRSVJL4niy10KiA/Jiz6y76V5QfZfS+0aE65VuoqAvg==}
+  /@angular/common/19.2.4_qebl5hlam5vmvw3ya5yjy5qwbq:
+    resolution: {integrity: sha512-5iBerI1hkY8rAt0gZQgOlfzR69jj5j25JyfkDOhdZhezE0pqhDc69OnbkUM20LTau4bFRYOj015eiKWzE2DOzQ==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     peerDependencies:
-      '@angular/core': 19.2.3
+      '@angular/core': 19.2.4
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 19.2.3_rxjs@7.8.2
+      '@angular/core': 19.2.4_rxjs@7.8.2
       rxjs: 7.8.2
       tslib: 2.8.1
     dev: true
 
-  /@angular/compiler-cli/19.2.3_hm6h4ioznorfbvqagzd65elpbe:
-    resolution: {integrity: sha512-ePh/7A6eEDAyfVn8QgLcAvrxhXBAf6mTqB/3+HwQeXLaka1gtN6xvZ6cjLEegP4s6kcYGhdfdLwzCcy0kjsY5g==}
+  /@angular/compiler-cli/19.2.4_ltuix3bmbosmtdoehqdwvvjuw4:
+    resolution: {integrity: sha512-zIWWJm0L+OGMGoRJ73WW96+LDSmZsWqNpwYYXBAEzzoMtPMsWg8uiOIxxjF9ZUWQ1Y5ODUSADnBJwt5vtiLbzA==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     hasBin: true
     peerDependencies:
-      '@angular/compiler': 19.2.3
+      '@angular/compiler': 19.2.4
       typescript: '>=5.5 <5.9'
     dependencies:
-      '@angular/compiler': 19.2.3
+      '@angular/compiler': 19.2.4
       '@babel/core': 7.26.9
       '@jridgewell/sourcemap-codec': 1.4.14
       chokidar: 4.0.1
@@ -107,15 +107,15 @@ packages:
       - supports-color
     dev: true
 
-  /@angular/compiler/19.2.3:
-    resolution: {integrity: sha512-TL/JIU7vzSWD+IrMq2PAiHZi7IUFSRhdHo8q6/WuZ8SQmbuXCK2pJvHZpTtUdLswdPeD/UVhkhTAhQzEyEdZVg==}
+  /@angular/compiler/19.2.4:
+    resolution: {integrity: sha512-HxUwmkoXMlj9EiSmRMRTI4vR3d5hSxiIZazq7OWtlEm8uKedzLzf72dF+hdc3yF6JCdF87vWiQN22bcGeTxYZw==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     dependencies:
       tslib: 2.8.1
     dev: true
 
-  /@angular/core/19.2.3_rxjs@7.8.2:
-    resolution: {integrity: sha512-uNDbQBDWdAfL8JhgG2l9eTEbikovZ+SthLUKERyR4fL7AVGSx85LjNySRuq4WAL4eiD1cRN1UUgu8o+WKqF/ow==}
+  /@angular/core/19.2.4_rxjs@7.8.2:
+    resolution: {integrity: sha512-ZuSMg+LWG0ADLEvMzSqU+D6M5KcQtxBssEFq4UskGIYuvNGqC91hAl4sbnXDQ5C7GgFcLY6ouaemS6dBOIfc/g==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     peerDependencies:
       rxjs: ^6.5.3 || ^7.4.0
@@ -125,17 +125,17 @@ packages:
       tslib: 2.8.1
     dev: true
 
-  /@angular/forms/19.2.3_hjkvwplvid2tvaumcupgfbyugi:
-    resolution: {integrity: sha512-JEgNKiZd3taYBg9lsMvoana5cv1QGke8xkuryc9zesHPJjhw9QHllmDPOW2HyUuwPqXZ/YkHiuCMOk+4qPjsAw==}
+  /@angular/forms/19.2.4_laq3phjmfzwlj4dsqyw4s55cne:
+    resolution: {integrity: sha512-XzFVmy2BduohtV6E304VCiCvayqV6hiYfPDvkzQnPiFfnQqRCGOTKSDOqxBDsSoDoZW7vZNHe3HmNMdyPg3Rog==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     peerDependencies:
-      '@angular/common': 19.2.3
-      '@angular/core': 19.2.3
-      '@angular/platform-browser': 19.2.3
+      '@angular/common': 19.2.4
+      '@angular/core': 19.2.4
+      '@angular/platform-browser': 19.2.4
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': 19.2.3_ap4tup2klsac5yf2z62xzwyqyy
-      '@angular/core': 19.2.3_rxjs@7.8.2
+      '@angular/common': 19.2.4_qebl5hlam5vmvw3ya5yjy5qwbq
+      '@angular/core': 19.2.4_rxjs@7.8.2
       rxjs: 7.8.2
       tslib: 2.8.1
     dev: true
