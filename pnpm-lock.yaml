@@ -22,13 +22,13 @@ specifiers:
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2
   rxjs: 7.8.2
-  typescript: 5.8.2
+  typescript: 5.8.3
 
 devDependencies:
   '@angular/cdk': 15.2.9_jxfjxzk5r43ws6z2owps6resty
   '@angular/common': 19.2.5_disd5emhs6aqxrma5cfs26qlga
   '@angular/compiler': 19.2.5
-  '@angular/compiler-cli': 19.2.5_5ll53t7dfctikme2eceruzlrbe
+  '@angular/compiler-cli': 19.2.5_ydsa56qmhbfylq4yoy6bfktp3i
   '@angular/core': 19.2.5_rxjs@7.8.2
   '@angular/forms': 19.2.5_jxfjxzk5r43ws6z2owps6resty
   '@rollup/plugin-babel': 6.0.4_rollup@2.79.2
@@ -40,13 +40,13 @@ devDependencies:
   pinst: 3.0.0
   prettier: 2.8.8
   pretty-quick: 4.1.1_prettier@2.8.8
-  release-it: 18.1.2_typescript@5.8.2
+  release-it: 18.1.2_typescript@5.8.3
   release-it-plugin-esm-bundle: 3.0.0_release-it@18.1.2
   rimraf: 6.0.1
   rollup: 2.79.2
   rollup-plugin-terser: 7.0.2_rollup@2.79.2
   rxjs: 7.8.2
-  typescript: 5.8.2
+  typescript: 5.8.3
 
 packages:
 
@@ -85,7 +85,7 @@ packages:
       tslib: 2.8.1
     dev: true
 
-  /@angular/compiler-cli/19.2.5_5ll53t7dfctikme2eceruzlrbe:
+  /@angular/compiler-cli/19.2.5_ydsa56qmhbfylq4yoy6bfktp3i:
     resolution: {integrity: sha512-b2cG41r6lilApXLlvja1Ra2D00dM3BxmQhoElKC1tOnpD6S3/krlH1DOnBB2I55RBn9iv4zdmPz1l8zPUSh7DQ==}
     engines: {node: ^18.19.1 || ^20.11.1 || >=22.0.0}
     hasBin: true
@@ -101,7 +101,7 @@ packages:
       reflect-metadata: 0.2.2
       semver: 7.6.3
       tslib: 2.8.1
-      typescript: 5.8.2
+      typescript: 5.8.3
       yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
@@ -1162,7 +1162,7 @@ packages:
       vary: 1.1.2
     dev: true
 
-  /cosmiconfig/9.0.0_typescript@5.8.2:
+  /cosmiconfig/9.0.0_typescript@5.8.3:
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1175,7 +1175,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      typescript: 5.8.2
+      typescript: 5.8.3
     dev: true
 
   /cross-spawn/7.0.3:
@@ -2721,10 +2721,10 @@ packages:
     peerDependencies:
       release-it: '>=15.0.0'
     dependencies:
-      release-it: 18.1.2_typescript@5.8.2
+      release-it: 18.1.2_typescript@5.8.3
     dev: true
 
-  /release-it/18.1.2_typescript@5.8.2:
+  /release-it/18.1.2_typescript@5.8.3:
     resolution: {integrity: sha512-HOVRcicehCgoCsPFOu0iCBlEC8GDOoKS5s6ICkWmqomGEoZtRQ88D3RCsI5MciSU8vAQU+aWZW2z57NQNNb74w==}
     engines: {node: ^20.9.0 || >=22.0.0}
     hasBin: true
@@ -2734,7 +2734,7 @@ packages:
       async-retry: 1.3.3
       chalk: 5.4.1
       ci-info: 4.1.0
-      cosmiconfig: 9.0.0_typescript@5.8.2
+      cosmiconfig: 9.0.0_typescript@5.8.3
       execa: 9.5.2
       git-url-parse: 16.0.0
       globby: 14.0.2
@@ -3202,8 +3202,8 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /typescript/5.8.2:
-    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
+  /typescript/5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
