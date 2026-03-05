@@ -7,7 +7,7 @@ specifiers:
   '@angular/compiler-cli': 19.2.19
   '@angular/core': 19.2.19
   '@angular/forms': 19.2.19
-  '@rollup/plugin-babel': 6.1.0
+  '@rollup/plugin-babel': 7.0.0
   concurrently: 9.2.1
   husky: 9.1.7
   karma: 6.4.4
@@ -31,7 +31,7 @@ devDependencies:
   '@angular/compiler-cli': 19.2.19_qm2b43g43jymbptx67gdzi56ra
   '@angular/core': 19.2.19_rxjs@7.8.2
   '@angular/forms': 19.2.19_iuw5grfvsrecx5anstt4vzaetm
-  '@rollup/plugin-babel': 6.1.0_rollup@2.80.0
+  '@rollup/plugin-babel': 7.0.0_rollup@2.80.0
   concurrently: 9.2.1
   husky: 9.1.7
   karma: 6.4.4
@@ -682,13 +682,13 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
 
-  /@rollup/plugin-babel/6.1.0_rollup@2.80.0:
-    resolution: {integrity: sha512-dFZNuFD2YRcoomP4oYf+DvQNSUA9ih+A3vUqopQx5EdtPGo3WBnQcI/S8pwpz91UsGfL0HsMSOlaMld8HrbubA==}
+  /@rollup/plugin-babel/7.0.0_rollup@2.80.0:
+    resolution: {integrity: sha512-NS2+P7v80N3MQqehZEjgpaFb9UyX3URNMW/zvoECKGo4PY4DvJfQusTI7BX/Ks+CPvtTfk3TqcR6S9VYBi/C+A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/babel__core': ^7.1.9
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+      rollup: ^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       '@types/babel__core':
         optional: true
