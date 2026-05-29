@@ -7,7 +7,7 @@ specifiers:
   '@angular/compiler-cli': 19.2.24
   '@angular/core': 19.2.24
   '@angular/forms': 19.2.24
-  '@rollup/plugin-babel': 7.0.0
+  '@rollup/plugin-babel': 7.1.0
   concurrently: 9.2.1
   husky: 9.1.7
   karma: 6.4.4
@@ -31,7 +31,7 @@ devDependencies:
   '@angular/compiler-cli': 19.2.24_3622zdbwaqoioyo3jmzm23wsse
   '@angular/core': 19.2.24_rxjs@7.8.2
   '@angular/forms': 19.2.24_dk62zeyjlsmkxvwpb73j2z2qju
-  '@rollup/plugin-babel': 7.0.0_rollup@2.80.0
+  '@rollup/plugin-babel': 7.1.0_rollup@2.80.0
   concurrently: 9.2.1
   husky: 9.1.7
   karma: 6.4.4
@@ -670,8 +670,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
 
-  /@rollup/plugin-babel/7.0.0_rollup@2.80.0:
-    resolution: {integrity: sha512-NS2+P7v80N3MQqehZEjgpaFb9UyX3URNMW/zvoECKGo4PY4DvJfQusTI7BX/Ks+CPvtTfk3TqcR6S9VYBi/C+A==}
+  /@rollup/plugin-babel/7.1.0_rollup@2.80.0:
+    resolution: {integrity: sha512-h9Y+xYha6p4wKO+FwdiPIkE+eIYCm8MzZPpX1iARIoFBnmKP9CnpT1p9dDf/DTFm6fyN8PmuLyRI5qZgchnitw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -686,6 +686,7 @@ packages:
       '@babel/helper-module-imports': 7.25.9
       '@rollup/pluginutils': 5.0.2_rollup@2.80.0
       rollup: 2.80.0
+      workerpool: 9.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2774,6 +2775,10 @@ packages:
     engines: {node: '>=20'}
     dependencies:
       powershell-utils: 0.2.0
+    dev: true
+
+  /workerpool/9.3.4:
+    resolution: {integrity: sha512-TmPRQYYSAnnDiEB0P/Ytip7bFGvqnSU6I2BcuSw7Hx+JSg/DsUi5ebYfc8GYaSdpuvOcEs6dXxPurOYpe9QFwg==}
     dev: true
 
   /wrap-ansi/7.0.0:
